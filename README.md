@@ -57,6 +57,68 @@ Slices can only be handled through some kind of pointer, and as such come in man
 
 ### 模块
 
+- [alloc]() Memory allocation APIs
+- [any]() This module implements the Any trait, which enables dynamic typing of any 'static type through runtime reflection.
+- [arch]() SIMD and vendor intrinsics module.
+- [ascii]()  Operations on ASCII strings and characters.
+- [borrow]() A module for working with borrowed data.
+- [boxed]() A pointer type for heap allocation.
+- [cell]() Shareable mutable containers.
+- [char]() A character type.
+- [clone]() 	The Clone trait for types that cannot be 'implicitly copied'.
+- [cmp]() 	Functionality for ordering and comparison.
+- [collections]() 	Collection types.
+- [convert]() 	Traits for conversions between types.
+- [default]() 	The Default trait for types which may have meaningful default values.
+- [env]() 	Inspection and manipulation of the process's environment.
+- [error]() 	Traits for working with Errors.
+- [f32]() 	This module provides constants which are specific to the implementation of the f32 floating point data type.
+- [f64]() 	This module provides constants which are specific to the implementation of the f64 floating point data type.
+- [ffi]() 	Utilities related to FFI bindings.
+- [fmt]() 	Utilities for formatting and printing Strings.
+- [fs]() 	Filesystem manipulation operations.
+- [hash]() 	Generic hashing support.
+- [hint]() 	Hints to compiler that affects how code should be emitted or optimized.
+- [i8]() 	The 8-bit signed integer type.
+- [i16]() 	The 16-bit signed integer type.
+- [i32]() 	The 32-bit signed integer type.
+- [i64]() 	The 64-bit signed integer type.
+- [i128]() 	The 128-bit signed integer type.
+- [io]() 	Traits, helpers, and type definitions for core I/O functionality.
+- [isize]() 	The pointer-sized signed integer type.
+- [iter]() 	Composable external iteration.
+- [marker]() 	Primitive traits and types representing basic properties of types.
+- [mem]() 	Basic functions for dealing with memory.
+- [net]() 	Networking primitives for TCP/UDP communication.
+- [num]() 	Additional functionality for numerics.
+- [ops]() 	Overloadable operators.
+- [option]() 	Optional values.
+- [os]() 	OS-specific functionality.
+- [panic]() Panic support in the standard library.
+- [path]() Cross-platform path manipulation.
+- [prelude]() 	The Rust Prelude.
+- [process]() 	A module for working with processes.
+- [ptr]() 	Manually manage memory through raw pointers.
+- [rc]() 	Single-threaded reference-counting pointers. 'Rc' stands for 'Reference Counted'.
+- [result]() 	Error handling with the Result type.
+- [slice]() 	A dynamically-sized view into a contiguous sequence, [T].
+- [str]() 	Unicode string slices.
+- [string]() 	A UTF-8 encoded, growable string.
+- [sync]() 	Useful synchronization primitives.
+- [thread]() 	Native threads.
+- [time]() 	Temporal quantification.
+- [u8]() 	The 8-bit unsigned integer type.
+- [u16]() 	The 16-bit unsigned integer type.
+- [u32]() 	The 32-bit unsigned integer type.
+- [u64]() 	The 64-bit unsigned integer type.
+- [u128]() 	The 128-bit unsigned integer type.
+- [usize]() 	The pointer-sized unsigned integer type.
+- [vec]() 	A contiguous growable array type with heap-allocated contents, written Vec<T>.
+- [future]() 	[Experimental] Asynchronous values.
+- [intrinsics]() 	[Experimental]rustc compiler intrinsics.
+- [pin]() 	[Experimental]Types which pin data to its location in memory
+- [raw]() 	[Experimental]Contains struct definitions for the layout of compiler built-in types.
+- [task]() 	[Experimental]Types and Traits for working with asynchronous tasks.
 
 ### 宏
 
