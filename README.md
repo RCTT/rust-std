@@ -168,3 +168,16 @@ Slices can only be handled through some kind of pointer, and as such come in man
 - [select]()	[Experimental] A macro to select an event from a number of receivers.
 
 ### 关键字
+
+- [as]()	The keyword for casting a value to a type.
+- [const]()	The keyword for defining constants.
+- [crate]()	The crate keyword.
+- [enum]()	For defining enumerations.
+- [extern]()	For external connections in Rust code.
+- [fn]()	The keyword for defining functions.
+- [for]()	The for keyword.
+- [if]()	If statements and expressions.
+- [impl]()	The implementation-defining keyword.
+- [let]()	The variable binding keyword.
+- [loop]()	The loop-defining keyword.
+- [struct]()	The keyword used to define structs.
