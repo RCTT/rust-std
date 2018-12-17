@@ -122,4 +122,49 @@ Slices can only be handled through some kind of pointer, and as such come in man
 
 ### 宏
 
+- [assert]()	Ensure that a boolean expression is true at runtime.
+- [assert_eq]()	Asserts that two expressions are equal to each other (using PartialEq).
+- [assert_ne]()	Asserts that two expressions are not equal to each other (using PartialEq).
+- [cfg]()	Boolean evaluation of configuration flags, at compile-time.
+- [column]()	A macro which expands to the column number on which it was invoked.
+- [compile_error]()	Unconditionally causes compilation to fail with the given error message when encountered.
+- [concat]()	Concatenates literals into a static string slice.
+- [debug_assert]()	Ensure that a boolean expression is true at runtime.
+- [debug_assert_eq]()	Asserts that two expressions are equal to each other.
+- [debug_assert_ne]()	Asserts that two expressions are not equal to each other.
+- [env]()	Inspect an environment variable at compile time.
+- [eprint]()	Macro for printing to the standard error.
+- [eprintln]()	Macro for printing to the standard error, with a newline.
+- [file]()	A macro which expands to the file name from which it was invoked.
+- [format]()	Creates a String using interpolation of runtime expressions.
+- [format_args]()	The core macro for formatted string creation & output.
+- [include]()	Parse a file as an expression or an item according to the context.
+- [include_bytes]()	Includes a file as a reference to a byte array.
+- [include_str]()	Includes a utf8-encoded file as a string.
+- [is_x86_feature_detected]()	A macro to test at runtime whether a CPU feature is available on x86/x86-64 platforms.
+- [line	A macro]() which expands to the line number on which it was invoked.
+- [module_path]()	Expands to a string that represents the current module path.
+- [option_env]()	Optionally inspect an environment variable at compile time.
+- [panic]()	The entry point for panic of Rust threads.
+- [print]()	Macro for printing to the standard output.
+- [println]()	Macro for printing to the standard output, with a newline.
+- [stringify]()	A macro which stringifies its arguments.
+- [thread_local]()	Declare a new thread local storage key of type std::thread::LocalKey.
+- [try]()	Helper macro for reducing boilerplate code for matching Result together with converting downstream errors.
+- [unimplemented]()	A standardized placeholder for marking unfinished code.
+- [unreachable]()	A utility macro for indicating unreachable code.
+- [vec]()	Creates a Vec containing the arguments.
+- [write]()	Write formatted data into a buffer.
+- [writeln]()	Write formatted data into a buffer, with a newline appended.
+- [await]()	[Experimental]
+- [concat_idents]()	[Experimental] Concatenate identifiers into one identifier.
+- [dbg]()	[Experimental] A macro for quick and dirty debugging with which you can inspect the value of a given expression. An example:
+- [is_aarch64_feature_detected]()	[Experimental]
+- [is_arm_feature_detected]()	[Experimental]
+- [is_mips64_feature_detected]()	[Experimental]
+- [is_mips_feature_detected]()	[Experimental]
+- [is_powerpc64_feature_detected]()	[Experimental]
+- [is_powerpc_feature_detected]()	[Experimental]
+- [select]()	[Experimental] A macro to select an event from a number of receivers.
+
 ### 关键字
