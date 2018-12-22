@@ -17,59 +17,59 @@ QQ交流群：962057386
 ### 容器与集合类型
 
 
-- [Vec<T>]() - A heap-allocated vector that is resizable at runtime.
-- [[T; n]]() - An inline array with a fixed size at compile time.
-- [[T]]() - A dynamically sized slice into any other kind of contiguous storage, whether heap-allocated or not.
+- [Vec<T>]() - 在堆上分配，运行期间可调整大小的 vector。
+- [[T; n]]() - 在编译时具有固定大小的内联数组。
+- [[T]]() - 一个动态大小的切片，它可以被分配到任何不同类型的连续存储中，不管是不是在堆上堆分配。
 
-Slices can only be handled through some kind of pointer, and as such come in many flavors such as:
+切片只能通过某种类型的指针来处理，因此有很多类型，例如:
 
-- [&[T]]() - shared slice
-- [&mut [T]]() - mutable slice
-- [Box<[T]>]() - owned slice
+- [&[T]]() - 切片引用
+- [&mut [T]]() - 可变切片
+- [Box<[T]>]() - 拥有的切片
 
 ### 基本类型
 
-- [array]()	    A fixed-size array, denoted [T; N], for the element type, T, and the non-negative compile-time constant size, N.
-- [bool]() 	    The boolean type.
-- [char]() 	    A character type.
-- [f32]() 	    The 32-bit floating point type.
-- [f64]()     	The 64-bit floating point type.
-- [fn]()      	Function pointers, like fn(usize) -> bool.
-- [i8]() 	        The 8-bit signed integer type.
-- [i16]() 	    The 16-bit signed integer type.
-- [i32]()     	The 32-bit signed integer type.
-- [i64]()     	The 64-bit signed integer type.
-- [i128]()    	The 128-bit signed integer type.
-- [isize]()       The pointer-sized signed integer type.
-- [pointer]() 	Raw, unsafe pointers, *const T, and *mut T.
-- [reference]()   References, both shared and mutable.
-- [slice]() 	    A dynamically-sized view into a contiguous sequence, [T].
-- [str]() 	    String slices.
-- [tuple]()       A finite heterogeneous sequence, (T, U, ..).
-- [u8]() 	        The 8-bit unsigned integer type.
-- [u16]() 	    The 16-bit unsigned integer type.
-- [u32]() 	    The 32-bit unsigned integer type.
-- [u64]() 	    The 64-bit unsigned integer type.
-- [u128]() 	    The 128-bit unsigned integer type.
-- [unit]()        The () type, sometimes called "unit" or "nil".
-- [usize]()       The pointer-sized unsigned integer type.
-- [never]() 	    [Experimental]The ! type, also called "never".
+- [array]()	   一个固定大小的数组, 写作 [T; N]，表示元素类型 T 和非负编译时常数大小 N。
+- [bool]() 	    布尔类型。
+- [char]() 	    字符类型。
+- [f32]() 	    32 位浮点数。
+- [f64]()     	64 位浮点数。
+- [fn]()      	函数指针, 形如 `fn(usize) -> bool`。
+- [i8]() 	    8 位有符号整形。
+- [i16]() 	    16 位有符号整形。
+- [i32]()     	32 位有符号整形。
+- [i64]()     	64 位有符号整形。
+- [i128]()    	128 位有符号整形。
+- [isize]()       指针大小的有符号整数类型。
+- [pointer]() 	裸指针，不安全指针, *const T 和 *mut T.
+- [reference]()   引用，包括共享的和可变的。
+- [slice]() 连续序列的动态大小视图[T]。
+- [str]() 	   字符串切片。
+- [tuple]()       有限非均匀序列（元组）, (T, U, ..)。
+- [u8]() 	    8 位无符号整形。
+- [u16]() 	    16 位无符号整形。
+- [u32]() 	    32 位无符号整形。
+- [u64]() 	    64 位无符号整形。
+- [u128]() 	    128 位无符号整形。
+- [unit]()      () 类型,称作 "unit" 或者 "nil".
+- [usize]()       指针大小的无符号整数类型。
+- [never]() 	    [Experimental] `!` 类型, 也称作 "never".
 
 ### 模块
 
-- [alloc]() Memory allocation APIs
-- [any]() This module implements the Any trait, which enables dynamic typing of any 'static type through runtime reflection.
-- [arch]() SIMD and vendor intrinsics module.
-- [ascii]()  Operations on ASCII strings and characters.
-- [borrow]() A module for working with borrowed data.
-- [boxed]() A pointer type for heap allocation.
-- [cell]() Shareable mutable containers.
-- [char]() A character type.
-- [clone]() 	The Clone trait for types that cannot be 'implicitly copied'.
-- [cmp]() 	Functionality for ordering and comparison.
-- [collections]() 	Collection types.
-- [convert]() 	Traits for conversions between types.
-- [default]() 	The Default trait for types which may have meaningful default values.
+- [alloc]() 内存分配API。
+- [any]() 这个模块实现了`Any trait`，它通过运行时反射支持任何静态类型的动态类型。
+- [arch]() SIMD 和 vendor 内部特性模块。
+- [ascii]()  ASCII 字符串与字符的相关操作符。
+- [borrow]() 处理借用数据的模块。
+- [boxed]() 在堆上分配的一种指针类型。
+- [cell]() 可共享的可变容器。
+- [char]() 字符类型。
+- [clone]() 无法“隐式复制”类型的 `clone` trait。
+- [cmp]() 	排序和比较。
+- [collections]() 	集合类型。
+- [convert]() 	类型之间转换的特性。
+- [default]() 可能有意义的默认值的类型的默认特性。
 - [env]() 	Inspection and manipulation of the process's environment.
 - [error]() 	Traits for working with Errors.
 - [f32]() 	This module provides constants which are specific to the implementation of the f32 floating point data type.
