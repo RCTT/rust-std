@@ -70,14 +70,14 @@ QQ交流群：962057386
 - [collections]() 	集合类型。
 - [convert]() 	类型之间转换的特性。
 - [default]() 可能有意义的默认值的类型的默认特性。
-- [env]() 	Inspection and manipulation of the process's environment.
-- [error]() 	Traits for working with Errors.
+- [env]() 	检查和操作当前进程的环境变量。
+- [error]() 	用于和错误打交道的特性。
 - [f32]() 	This module provides constants which are specific to the implementation of the f32 floating point data type.
 - [f64]() 	This module provides constants which are specific to the implementation of the f64 floating point data type.
-- [ffi]() 	Utilities related to FFI bindings.
-- [fmt]() 	Utilities for formatting and printing Strings.
-- [fs]() 	Filesystem manipulation operations.
-- [hash]() 	Generic hashing support.
+- [ffi]() 	与FFI绑定有关实用工具。
+- [fmt]() 	与格式化和打印字符串有关的实用工具。
+- [fs]() 	文件系统相关操作。
+- [hash]() 	泛化的HASH支持。
 - [hint]() 	Hints to compiler that affects how code should be emitted or optimized.
 - [i8]() 	The 8-bit signed integer type.
 - [i16]() 	The 16-bit signed integer type.
@@ -156,28 +156,28 @@ QQ交流群：962057386
 - [vec]()	Creates a Vec containing the arguments.
 - [write]()	Write formatted data into a buffer.
 - [writeln]()	Write formatted data into a buffer, with a newline appended.
-- [await]()	[Experimental]
-- [concat_idents]()	[Experimental] Concatenate identifiers into one identifier.
-- [dbg]()	[Experimental] A macro for quick and dirty debugging with which you can inspect the value of a given expression. An example:
-- [is_aarch64_feature_detected]()	[Experimental]
-- [is_arm_feature_detected]()	[Experimental]
-- [is_mips64_feature_detected]()	[Experimental]
-- [is_mips_feature_detected]()	[Experimental]
-- [is_powerpc64_feature_detected]()	[Experimental]
-- [is_powerpc_feature_detected]()	[Experimental]
-- [select]()	[Experimental] A macro to select an event from a number of receivers.
+- [await]()	[实验性]
+- [concat_idents]()	[实验性] Concatenate identifiers into one identifier.
+- [dbg]()	[实验性] A macro for quick and dirty debugging with which you can inspect the value of a given expression. An example:
+- [is_aarch64_feature_detected]()	[实验性]
+- [is_arm_feature_detected]()	[实验性]
+- [is_mips64_feature_detected]()	[实验性]
+- [is_mips_feature_detected]()	[实验性]
+- [is_powerpc64_feature_detected]()	[实验性]
+- [is_powerpc_feature_detected]()	[实验性]
+- [select]()	[实验性] A macro to select an event from a number of receivers.
 
 ### 关键字
 
-- [as]()	The keyword for casting a value to a type.
-- [const]()	The keyword for defining constants.
-- [crate]()	The crate keyword.
-- [enum]()	For defining enumerations.
-- [extern]()	For external connections in Rust code.
-- [fn]()	The keyword for defining functions.
-- [for]()	The for keyword.
-- [if]()	If statements and expressions.
-- [impl]()	The implementation-defining keyword.
-- [let]()	The variable binding keyword.
-- [loop]()	The loop-defining keyword.
-- [struct]()	The keyword used to define structs.
+- [as]()	用于将一个值转换为类型的关键字。
+- [const]()	用于定义常量。
+- [crate]()	用于代码库的关键字。
+- [enum]()	用于定义枚举。
+- [extern]()	用于外部模块导入。
+- [fn]()	用于定义函数。
+- [for]()	for关键字。
+- [if]()	if语句定义关键字。
+- [impl]()	定义特性实现的关键字。
+- [let]()	变量绑定关键字。
+- [loop]()	用于定义循环。
+- [struct]()	用于定义结构体的关键字。
