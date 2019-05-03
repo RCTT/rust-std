@@ -72,20 +72,20 @@ QQ交流群：962057386
 - [default]() 可能有意义的默认值的类型的默认特性。
 - [env]() 	检查和操作当前进程的环境变量。
 - [error]() 	用于和错误打交道的特性。
-- [f32]() 	This module provides constants which are specific to the implementation of the f32 floating point data type.
-- [f64]() 	This module provides constants which are specific to the implementation of the f64 floating point data type.
+- [f32]() 	这个模块提供了 `f32` 浮点数类型特有的常量。
+- [f64]() 	这个模块提供了 `f64` 浮点数类型特有的常量。
 - [ffi]() 	与FFI绑定有关实用工具。
 - [fmt]() 	与格式化和打印字符串有关的实用工具。
 - [fs]() 	文件系统相关操作。
 - [hash]() 	泛化的HASH支持。
-- [hint]() 	Hints to compiler that affects how code should be emitted or optimized.
-- [i8]() 	The 8-bit signed integer type.
-- [i16]() 	The 16-bit signed integer type.
-- [i32]() 	The 32-bit signed integer type.
-- [i64]() 	The 64-bit signed integer type.
-- [i128]() 	The 128-bit signed integer type.
-- [io]() 	Traits, helpers, and type definitions for core I/O functionality.
-- [isize]() 	The pointer-sized signed integer type.
+- [hint]() 	提示编译器如何触发或者优化代码的影响。
+- [i8]() 	8位有符号整数类型。
+- [i16]() 	16位有符号整数类型。
+- [i32]() 	32位有符号整数类型。
+- [i64]() 	64位有符号整数类型。
+- [i128]() 	128位有符号整数类型。
+- [io]() 	基础 I/O 功能 包括 特性， 帮助类， 和一些相关类型定义。
+- [isize]() 	指针大小的有符号整数类型.
 - [iter]() 	Composable external iteration.
 - [marker]() 	Primitive traits and types representing basic properties of types.
 - [mem]() 	Basic functions for dealing with memory.
@@ -97,28 +97,28 @@ QQ交流群：962057386
 - [panic]() Panic support in the standard library.
 - [path]() Cross-platform path manipulation.
 - [prelude]() 	The Rust Prelude.
-- [process]() 	A module for working with processes.
-- [ptr]() 	Manually manage memory through raw pointers.
-- [rc]() 	Single-threaded reference-counting pointers. 'Rc' stands for 'Reference Counted'.
-- [result]() 	Error handling with the Result type.
+- [process]() 	一个用于处理进程的模块。
+- [ptr]() 	通过裸指针管理内存。
+- [rc]() 	在单线程中进行引用计数的指针类型。 'Rc' 表示 'Reference Counted'。
+- [result]() 	提供在错误处理中使用Result类型的能力。
 - [slice]() 	A dynamically-sized view into a contiguous sequence, [T].
 - [str]() 	Unicode string slices.
-- [string]() 	A UTF-8 encoded, growable string.
-- [sync]() 	Useful synchronization primitives.
-- [thread]() 	Native threads.
+- [string]() 	UTF-8编码可持续增长的字符串
+- [sync]() 	一些有用的进行同步的基础功能。
+- [thread]() 	系统原生线程管理。
 - [time]() 	Temporal quantification.
-- [u8]() 	The 8-bit unsigned integer type.
-- [u16]() 	The 16-bit unsigned integer type.
-- [u32]() 	The 32-bit unsigned integer type.
-- [u64]() 	The 64-bit unsigned integer type.
-- [u128]() 	The 128-bit unsigned integer type.
-- [usize]() 	The pointer-sized unsigned integer type.
-- [vec]() 	A contiguous growable array type with heap-allocated contents, written Vec<T>.
-- [future]() 	[Experimental] Asynchronous values.
-- [intrinsics]() 	[Experimental]rustc compiler intrinsics.
-- [pin]() 	[Experimental]Types which pin data to its location in memory
-- [raw]() 	[Experimental]Contains struct definitions for the layout of compiler built-in types.
-- [task]() 	[Experimental]Types and Traits for working with asynchronous tasks.
+- [u8]() 	8位无符号整数类型。
+- [u16]() 	16位无符号整数类型。
+- [u32]() 	32位无符号整数类型。
+- [u64]() 	64位无符号整数类型。
+- [u128]() 	128位无符号整数类型。
+- [usize]() 	指针大小的无符号整数类型.
+- [vec]() 	一种在堆上分配空间存储数据的，可持续增长的数组类型， 形如 Vec<T>。
+- [future]() 	[实验性] Asynchronous values.
+- [intrinsics]() 	[实验性]rustc compiler intrinsics.
+- [pin]() 	[实验性]Types which pin data to its location in memory
+- [raw]() 	[实验性]Contains struct definitions for the layout of compiler built-in types.
+- [task]() 	[实验性]用于处理异步任务的一些类型和特性。
 
 ### 宏
 
@@ -151,9 +151,9 @@ QQ交流群：962057386
 - [stringify]()	A macro which stringifies its arguments.
 - [thread_local]()	Declare a new thread local storage key of type std::thread::LocalKey.
 - [try]()	Helper macro for reducing boilerplate code for matching Result together with converting downstream errors.
-- [unimplemented]()	A standardized placeholder for marking unfinished code.
-- [unreachable]()	A utility macro for indicating unreachable code.
-- [vec]()	Creates a Vec containing the arguments.
+- [unimplemented]()	标记未完成代码的占位宏。
+- [unreachable]()	表明不可达代码的通用宏。
+- [vec]()	使用参数构建Vec的宏。
 - [write]()	Write formatted data into a buffer.
 - [writeln]()	Write formatted data into a buffer, with a newline appended.
 - [await]()	[实验性]
@@ -178,6 +178,6 @@ QQ交流群：962057386
 - [for]()	for关键字。
 - [if]()	if语句定义关键字。
 - [impl]()	定义特性实现的关键字。
-- [let]()	变量绑定关键字。
-- [loop]()	用于定义循环。
+- [let]()	实现变量绑定的关键字。
+- [loop]()	用于定义循环的关键字。
 - [struct]()	用于定义结构体的关键字。
