@@ -91,11 +91,11 @@ QQ交流群：962057386
 - [mem]() 	Basic functions for dealing with memory.
 - [net]() 	Networking primitives for TCP/UDP communication.
 - [num]() 	Additional functionality for numerics.
-- [ops]() 	Overloadable operators.
-- [option]() 	Optional values.
-- [os]() 	OS-specific functionality.
-- [panic]() Panic support in the standard library.
-- [path]() Cross-platform path manipulation.
+- [ops]() 	可重载的操作符。
+- [option]()  可选的值。
+- [os]() 	操作系统相关的基础功能。
+- [panic]() 标准库中panic的支持模块。
+- [path]() 跨平台的路径操作模块。
 - [prelude]() 	The Rust Prelude.
 - [process]() 	一个用于处理进程的模块。
 - [ptr]() 	通过裸指针管理内存。
@@ -122,50 +122,50 @@ QQ交流群：962057386
 
 ### 宏
 
-- [assert]()	Ensure that a boolean expression is true at runtime.
-- [assert_eq]()	Asserts that two expressions are equal to each other (using PartialEq).
-- [assert_ne]()	Asserts that two expressions are not equal to each other (using PartialEq).
-- [cfg]()	Boolean evaluation of configuration flags, at compile-time.
-- [column]()	A macro which expands to the column number on which it was invoked.
-- [compile_error]()	Unconditionally causes compilation to fail with the given error message when encountered.
-- [concat]()	Concatenates literals into a static string slice.
-- [debug_assert]()	Ensure that a boolean expression is true at runtime.
-- [debug_assert_eq]()	Asserts that two expressions are equal to each other.
-- [debug_assert_ne]()	Asserts that two expressions are not equal to each other.
-- [env]()	Inspect an environment variable at compile time.
-- [eprint]()	Macro for printing to the standard error.
-- [eprintln]()	Macro for printing to the standard error, with a newline.
-- [file]()	A macro which expands to the file name from which it was invoked.
-- [format]()	Creates a String using interpolation of runtime expressions.
-- [format_args]()	The core macro for formatted string creation & output.
-- [include]()	Parse a file as an expression or an item according to the context.
-- [include_bytes]()	Includes a file as a reference to a byte array.
-- [include_str]()	Includes a utf8-encoded file as a string.
-- [is_x86_feature_detected]()	A macro to test at runtime whether a CPU feature is available on x86/x86-64 platforms.
-- [line	A macro]() which expands to the line number on which it was invoked.
-- [module_path]()	Expands to a string that represents the current module path.
-- [option_env]()	Optionally inspect an environment variable at compile time.
-- [panic]()	The entry point for panic of Rust threads.
-- [print]()	Macro for printing to the standard output.
-- [println]()	Macro for printing to the standard output, with a newline.
-- [stringify]()	A macro which stringifies its arguments.
+- [assert]()	该宏确保布尔表达式在运行期始终为true。
+- [assert_eq]()	该宏判断两个表达式求值后是否相等 (使用 PartialEq 特性)。
+- [assert_ne]()	该宏判断两个表达式求值后是否不相等 (使用 PartialEq 特性)。
+- [cfg]()	在编译时期，该宏将配置标记进行布尔表达式求值的宏。
+- [column]()	该宏返回当前程序所在的代码行号。
+- [compile_error]()	该宏可以在编译时，无条件的导致一个编译错误，并报告其所携带的错误信息。
+- [concat]()	该宏将多个字面量值链接成为一个静态的字符串切片。
+- [dbg]() 一个用于快速debug，方便检查一个表达式值的宏。
+- [debug_assert]()	该宏确保布尔表达式在运行期始终为true。
+- [debug_assert_eq]()	该宏判断两个表达式求值后是否相等。
+- [debug_assert_ne]()	该宏判断两个表达式求值后是否不相等。
+- [env]()	该宏在编译期检查并返回一个环境变量值。
+- [eprint]()	使用此宏可以在标准错误输出中打印信息。
+- [eprintln]()	使用此宏可以在标准错误输出中打印信息,并在末尾加上 `\newline`。
+- [file]()	该宏可以返回当前执行函数所在的文件的文件名。
+- [format]()	该宏使用运行期插入的表达式返回一个字符串。
+- [format_args]()	该宏用于创建或者输出一个格式化后的字符串。
+- [include]()	该宏将一个文件的内容解析并引入到当前的运行上下文中。
+- [include_bytes]()	以byte数组的方式对文件进行解析，并实现include。
+- [include_str]()	以UTF-8编码字符串的方式对文件进行解析，并实现include。
+- [is_x86_feature_detected]()	该宏用于测试一个cpu 特性是否可以用于 x86/x86-64 指令集平台。
+- [line]() which 该宏可以返回当前执行程序所在的代码行的行号。
+- [module_path]()	该宏返回当前文件所在的模块路径。
+- [option_env]()	该宏在编译期，检查一个宏，并返回使用 `Option` 类型包装的环境变量值。
+- [panic]()	该宏可以在一个Rust线程内引起线程恐慌。
+- [print]()	该宏用于将内容打印到标准输出中。
+- [println]()	该宏用于将内容打印到标准输出中，并在末尾加上 `\newline`。
+- [stringify]()	该宏可以将他的参数字符串化后返回。
 - [thread_local]()	Declare a new thread local storage key of type std::thread::LocalKey.
 - [try]()	Helper macro for reducing boilerplate code for matching Result together with converting downstream errors.
 - [unimplemented]()	标记未完成代码的占位宏。
 - [unreachable]()	表明不可达代码的通用宏。
 - [vec]()	使用参数构建Vec的宏。
-- [write]()	Write formatted data into a buffer.
-- [writeln]()	Write formatted data into a buffer, with a newline appended.
-- [await]()	[实验性]
-- [concat_idents]()	[实验性] Concatenate identifiers into one identifier.
-- [dbg]()	[实验性] A macro for quick and dirty debugging with which you can inspect the value of a given expression. An example:
-- [is_aarch64_feature_detected]()	[实验性]
-- [is_arm_feature_detected]()	[实验性]
-- [is_mips64_feature_detected]()	[实验性]
-- [is_mips_feature_detected]()	[实验性]
-- [is_powerpc64_feature_detected]()	[实验性]
-- [is_powerpc_feature_detected]()	[实验性]
-- [select]()	[实验性] A macro to select an event from a number of receivers.
+- [write]()	使用该宏可以将格式化的数据写入一个buffer中。
+- [writeln]()	使用该宏可以将格式化的数据写入到一个buffer中，并在末尾加上 `\newline`
+- [await]()	[实验性] 一个用于等待异步调用返回的宏。
+- [concat_idents]()	[实验性] 该宏将多个标识符链接成为一个标识符号。
+- [is_aarch64_feature_detected]()	[实验性] Prevents compilation if is_aarch64_feature_detected is used somewhere else than aarch64 targets.
+- [is_arm_feature_detected]()	[实验性] Prevents compilation if is_arm_feature_detected is used somewhere else than ARM targets.
+- [is_mips64_feature_detected]()	[实验性] Prevents compilation if is_mips64_feature_detected is used somewhere else than MIPS64 targets.
+- [is_mips_feature_detected]()	[实验性] Prevents compilation if is_mips_feature_detected is used somewhere else than MIPS targets.
+- [is_powerpc64_feature_detected]()	[实验性] Prevents compilation if is_powerpc64_feature_detected is used somewhere else than PowerPC64 targets.
+- [is_powerpc_feature_detected]()	[实验性] Prevents compilation if is_powerpc_feature_detected is used somewhere else than PowerPC targets.
+- [select]()	[废弃的] [实验性] 该宏用于在一系列事件接受者中选取一个处理当前时间。
 
 ### 关键字
 
