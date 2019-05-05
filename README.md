@@ -35,11 +35,11 @@ QQ交流群：962057386
 - [f32]() 	    32 位浮点数。
 - [f64]()     	64 位浮点数。
 - [fn]()      	函数指针, 形如 `fn(usize) -> bool`。
-- [i8]() 	    8 位有符号整形。
-- [i16]() 	    16 位有符号整形。
-- [i32]()     	32 位有符号整形。
-- [i64]()     	64 位有符号整形。
-- [i128]()    	128 位有符号整形。
+- [i8]() 	    8 位有符号整型。
+- [i16]() 	    16 位有符号整型。
+- [i32]()     	32 位有符号整型。
+- [i64]()     	64 位有符号整型。
+- [i128]()    	128 位有符号整型。
 - [isize]()       指针大小的有符号整数类型。
 - [pointer]() 	裸指针，不安全指针, *const T 和 *mut T.
 - [reference]()   引用，包括共享的和可变的。
@@ -47,10 +47,10 @@ QQ交流群：962057386
 - [str]() 	   字符串切片。
 - [tuple]()       有限非均匀序列（元组）, (T, U, ..)。
 - [u8]() 	    8 位无符号整形。
-- [u16]() 	    16 位无符号整形。
-- [u32]() 	    32 位无符号整形。
-- [u64]() 	    64 位无符号整形。
-- [u128]() 	    128 位无符号整形。
+- [u16]() 	    16 位无符号整型。
+- [u32]() 	    32 位无符号整型。
+- [u64]() 	    64 位无符号整型。
+- [u128]() 	    128 位无符号整型。
 - [unit]()      () 类型,称作 "unit" 或者 "nil".
 - [usize]()       指针大小的无符号整数类型。
 - [never]() 	    [Experimental] `!` 类型, 也称作 "never".
@@ -122,7 +122,7 @@ QQ交流群：962057386
 
 ### 宏
 
-- [assert]()	Ensure that a boolean expression is true at runtime.
+- [assert]()	保证运行时布尔表达式为真的宏。
 - [assert_eq]()	Asserts that two expressions are equal to each other (using PartialEq).
 - [assert_ne]()	Asserts that two expressions are not equal to each other (using PartialEq).
 - [cfg]()	Boolean evaluation of configuration flags, at compile-time.
