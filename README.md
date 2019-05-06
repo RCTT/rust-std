@@ -35,11 +35,11 @@ QQ交流群：962057386
 - [f32]() 	    32 位浮点数。
 - [f64]()     	64 位浮点数。
 - [fn]()      	函数指针, 形如 `fn(usize) -> bool`。
-- [i8]() 	    8 位有符号整形。
-- [i16]() 	    16 位有符号整形。
-- [i32]()     	32 位有符号整形。
-- [i64]()     	64 位有符号整形。
-- [i128]()    	128 位有符号整形。
+- [i8]() 	    8 位有符号整型。
+- [i16]() 	    16 位有符号整型。
+- [i32]()     	32 位有符号整型。
+- [i64]()     	64 位有符号整型。
+- [i128]()    	128 位有符号整型。
 - [isize]()       指针大小的有符号整数类型。
 - [pointer]() 	裸指针，不安全指针, *const T 和 *mut T.
 - [reference]()   引用，包括共享的和可变的。
@@ -47,10 +47,10 @@ QQ交流群：962057386
 - [str]() 	   字符串切片。
 - [tuple]()       有限非均匀序列（元组）, (T, U, ..)。
 - [u8]() 	    8 位无符号整形。
-- [u16]() 	    16 位无符号整形。
-- [u32]() 	    32 位无符号整形。
-- [u64]() 	    64 位无符号整形。
-- [u128]() 	    128 位无符号整形。
+- [u16]() 	    16 位无符号整型。
+- [u32]() 	    32 位无符号整型。
+- [u64]() 	    64 位无符号整型。
+- [u128]() 	    128 位无符号整型。
 - [unit]()      () 类型,称作 "unit" 或者 "nil".
 - [usize]()       指针大小的无符号整数类型。
 - [never]() 	    [Experimental] `!` 类型, 也称作 "never".
@@ -70,114 +70,114 @@ QQ交流群：962057386
 - [collections]() 	集合类型。
 - [convert]() 	类型之间转换的特性。
 - [default]() 可能有意义的默认值的类型的默认特性。
-- [env]() 	Inspection and manipulation of the process's environment.
-- [error]() 	Traits for working with Errors.
-- [f32]() 	This module provides constants which are specific to the implementation of the f32 floating point data type.
-- [f64]() 	This module provides constants which are specific to the implementation of the f64 floating point data type.
-- [ffi]() 	Utilities related to FFI bindings.
-- [fmt]() 	Utilities for formatting and printing Strings.
-- [fs]() 	Filesystem manipulation operations.
-- [hash]() 	Generic hashing support.
-- [hint]() 	Hints to compiler that affects how code should be emitted or optimized.
-- [i8]() 	The 8-bit signed integer type.
-- [i16]() 	The 16-bit signed integer type.
-- [i32]() 	The 32-bit signed integer type.
-- [i64]() 	The 64-bit signed integer type.
-- [i128]() 	The 128-bit signed integer type.
-- [io]() 	Traits, helpers, and type definitions for core I/O functionality.
-- [isize]() 	The pointer-sized signed integer type.
-- [iter]() 	Composable external iteration.
-- [marker]() 	Primitive traits and types representing basic properties of types.
-- [mem]() 	Basic functions for dealing with memory.
-- [net]() 	Networking primitives for TCP/UDP communication.
-- [num]() 	Additional functionality for numerics.
-- [ops]() 	Overloadable operators.
-- [option]() 	Optional values.
-- [os]() 	OS-specific functionality.
-- [panic]() Panic support in the standard library.
-- [path]() Cross-platform path manipulation.
-- [prelude]() 	The Rust Prelude.
-- [process]() 	A module for working with processes.
-- [ptr]() 	Manually manage memory through raw pointers.
-- [rc]() 	Single-threaded reference-counting pointers. 'Rc' stands for 'Reference Counted'.
-- [result]() 	Error handling with the Result type.
-- [slice]() 	A dynamically-sized view into a contiguous sequence, [T].
-- [str]() 	Unicode string slices.
-- [string]() 	A UTF-8 encoded, growable string.
-- [sync]() 	Useful synchronization primitives.
-- [thread]() 	Native threads.
-- [time]() 	Temporal quantification.
-- [u8]() 	The 8-bit unsigned integer type.
-- [u16]() 	The 16-bit unsigned integer type.
-- [u32]() 	The 32-bit unsigned integer type.
-- [u64]() 	The 64-bit unsigned integer type.
-- [u128]() 	The 128-bit unsigned integer type.
-- [usize]() 	The pointer-sized unsigned integer type.
-- [vec]() 	A contiguous growable array type with heap-allocated contents, written Vec<T>.
-- [future]() 	[Experimental] Asynchronous values.
-- [intrinsics]() 	[Experimental]rustc compiler intrinsics.
-- [pin]() 	[Experimental]Types which pin data to its location in memory
-- [raw]() 	[Experimental]Contains struct definitions for the layout of compiler built-in types.
-- [task]() 	[Experimental]Types and Traits for working with asynchronous tasks.
+- [env]() 	检查和操作当前进程的环境变量。
+- [error]() 	用于和错误打交道的特性。
+- [f32]() 	这个模块提供了 `f32` 浮点数类型特有的常量。
+- [f64]() 	这个模块提供了 `f64` 浮点数类型特有的常量。
+- [ffi]() 	与FFI绑定有关实用工具。
+- [fmt]() 	与格式化和打印字符串有关的实用工具。
+- [fs]() 	文件系统相关操作。
+- [hash]() 	泛化的HASH支持。
+- [hint]() 	提示编译器如何触发或者优化代码的影响。
+- [i8]() 	8位有符号整数类型。
+- [i16]() 	16位有符号整数类型。
+- [i32]() 	32位有符号整数类型。
+- [i64]() 	64位有符号整数类型。
+- [i128]() 	128位有符号整数类型。
+- [io]() 	基础 I/O 功能 包括 特性， 帮助类， 和一些相关类型定义。
+- [isize]() 	指针大小的有符号整数类型.
+- [iter]() 	提供能对集合进行外部迭代的特性和结构体。
+- [marker]() 	用于表示类型基本属性的基础特性，如 Copy。
+- [mem]() 	用于管理内存的基础函数。
+- [net]() 	提供 TCP/UDP 基础通信能力的模块。
+- [num]() 	额外用于数学计算的类型。
+- [ops]() 	可重载的操作符。
+- [option]()  可选的值。
+- [os]() 	操作系统相关的基础功能。
+- [panic]() 标准库中panic的支持模块。
+- [path]() 跨平台的路径操作模块。
+- [pin]() 	用于固定变量到内存地址的模块。
+- [prelude]() 	Rust默认引入的部分。
+- [process]() 	一个用于处理进程的模块。
+- [ptr]() 	通过裸指针管理内存。
+- [rc]() 	在单线程中进行引用计数的指针类型。 'Rc' 表示 'Reference Counted'。
+- [result]() 	提供在错误处理中使用Result类型的能力。
+- [slice]() 	访问连续序列的一种视图, 可以使用泛型[T].
+- [str]() 	Unicode 编码的字符切片。
+- [string]() 	UTF-8编码可持续增长的字符串
+- [sync]() 	一些有用的进行同步的基础功能。
+- [thread]() 	系统原生线程管理。
+- [time]() 	时间计量工具。
+- [u8]() 	8位无符号整数类型。
+- [u16]() 	16位无符号整数类型。
+- [u32]() 	32位无符号整数类型。
+- [u64]() 	64位无符号整数类型。
+- [u128]() 	128位无符号整数类型。
+- [usize]() 	指针大小的无符号整数类型.
+- [vec]() 	一种在堆上分配空间存储数据的，可持续增长的数组类型， 形如 Vec<T>。
+- [future]() 	[实验性] 一些异步变量.
+- [intrinsics]() 	[实验性] rustc 编译器 内联函数.
+- [raw]() 	[实验性] 包含一些用于定义编译器内建类型的结构体定义。
+- [task]() 	[实验性]用于处理异步任务的一些类型和特性。
 
 ### 宏
 
-- [assert]()	Ensure that a boolean expression is true at runtime.
-- [assert_eq]()	Asserts that two expressions are equal to each other (using PartialEq).
-- [assert_ne]()	Asserts that two expressions are not equal to each other (using PartialEq).
-- [cfg]()	Boolean evaluation of configuration flags, at compile-time.
-- [column]()	A macro which expands to the column number on which it was invoked.
-- [compile_error]()	Unconditionally causes compilation to fail with the given error message when encountered.
-- [concat]()	Concatenates literals into a static string slice.
-- [debug_assert]()	Ensure that a boolean expression is true at runtime.
-- [debug_assert_eq]()	Asserts that two expressions are equal to each other.
-- [debug_assert_ne]()	Asserts that two expressions are not equal to each other.
-- [env]()	Inspect an environment variable at compile time.
-- [eprint]()	Macro for printing to the standard error.
-- [eprintln]()	Macro for printing to the standard error, with a newline.
-- [file]()	A macro which expands to the file name from which it was invoked.
-- [format]()	Creates a String using interpolation of runtime expressions.
-- [format_args]()	The core macro for formatted string creation & output.
-- [include]()	Parse a file as an expression or an item according to the context.
-- [include_bytes]()	Includes a file as a reference to a byte array.
-- [include_str]()	Includes a utf8-encoded file as a string.
-- [is_x86_feature_detected]()	A macro to test at runtime whether a CPU feature is available on x86/x86-64 platforms.
-- [line	A macro]() which expands to the line number on which it was invoked.
-- [module_path]()	Expands to a string that represents the current module path.
-- [option_env]()	Optionally inspect an environment variable at compile time.
-- [panic]()	The entry point for panic of Rust threads.
-- [print]()	Macro for printing to the standard output.
-- [println]()	Macro for printing to the standard output, with a newline.
-- [stringify]()	A macro which stringifies its arguments.
-- [thread_local]()	Declare a new thread local storage key of type std::thread::LocalKey.
-- [try]()	Helper macro for reducing boilerplate code for matching Result together with converting downstream errors.
-- [unimplemented]()	A standardized placeholder for marking unfinished code.
-- [unreachable]()	A utility macro for indicating unreachable code.
-- [vec]()	Creates a Vec containing the arguments.
-- [write]()	Write formatted data into a buffer.
-- [writeln]()	Write formatted data into a buffer, with a newline appended.
-- [await]()	[Experimental]
-- [concat_idents]()	[Experimental] Concatenate identifiers into one identifier.
-- [dbg]()	[Experimental] A macro for quick and dirty debugging with which you can inspect the value of a given expression. An example:
-- [is_aarch64_feature_detected]()	[Experimental]
-- [is_arm_feature_detected]()	[Experimental]
-- [is_mips64_feature_detected]()	[Experimental]
-- [is_mips_feature_detected]()	[Experimental]
-- [is_powerpc64_feature_detected]()	[Experimental]
-- [is_powerpc_feature_detected]()	[Experimental]
-- [select]()	[Experimental] A macro to select an event from a number of receivers.
+- [assert]()	该宏确保布尔表达式在运行期始终为true。
+- [assert_eq]()	该宏判断两个表达式求值后是否相等 (使用 PartialEq 特性)。
+- [assert_ne]()	该宏判断两个表达式求值后是否不相等 (使用 PartialEq 特性)。
+- [cfg]()	在编译时期，该宏将配置标记进行布尔表达式求值的宏。
+- [column]()	该宏返回当前程序所在的代码行号。
+- [compile_error]()	该宏可以在编译时，无条件的导致一个编译错误，并报告其所携带的错误信息。
+- [concat]()	该宏将多个字面量值链接成为一个静态的字符串切片。
+- [dbg]() 一个用于快速debug，方便检查一个表达式值的宏。
+- [debug_assert]()	该宏确保布尔表达式在运行期始终为true。
+- [debug_assert_eq]()	该宏判断两个表达式求值后是否相等。
+- [debug_assert_ne]()	该宏判断两个表达式求值后是否不相等。
+- [env]()	该宏在编译期检查并返回一个环境变量值。
+- [eprint]()	使用此宏可以在标准错误输出中打印信息。
+- [eprintln]()	使用此宏可以在标准错误输出中打印信息,并在末尾加上 `\newline`。
+- [file]()	该宏可以返回当前执行函数所在的文件的文件名。
+- [format]()	该宏使用运行期插入的表达式返回一个字符串。
+- [format_args]()	该宏用于创建或者输出一个格式化后的字符串。
+- [include]()	该宏将一个文件的内容解析并引入到当前的运行上下文中。
+- [include_bytes]()	以byte数组的方式对文件进行解析，并实现include。
+- [include_str]()	以UTF-8编码字符串的方式对文件进行解析，并实现include。
+- [is_x86_feature_detected]()	该宏用于测试一个cpu 特性是否可以用于 x86/x86-64 指令集平台。
+- [line]() which 该宏可以返回当前执行程序所在的代码行的行号。
+- [module_path]()	该宏返回当前文件所在的模块路径。
+- [option_env]()	该宏在编译期，检查一个宏，并返回使用 `Option` 类型包装的环境变量值。
+- [panic]()	该宏可以在一个Rust线程内引起线程恐慌。
+- [print]()	该宏用于将内容打印到标准输出中。
+- [println]()	该宏用于将内容打印到标准输出中，并在末尾加上 `\newline`。
+- [stringify]()	该宏可以将他的参数字符串化后返回。
+- [thread_local]()	声明一个新的 std::thread::LocalKey 类型变量。
+- [try]()	一个用于减少在匹配 Result 类型或当发生向下转型错误时的样板代码的工具宏。
+- [unimplemented]()	标记未完成代码的占位宏。
+- [unreachable]()	表明不可达代码的通用宏。
+- [vec]()	使用参数构建Vec的宏。
+- [write]()	使用该宏可以将格式化的数据写入一个buffer中。
+- [writeln]()	使用该宏可以将格式化的数据写入到一个buffer中，并在末尾加上 `\newline`
+- [await]()	[实验性] 一个用于等待异步调用返回的宏。
+- [concat_idents]()	[实验性] 该宏将多个标识符链接成为一个标识符号。
+- [is_aarch64_feature_detected]()	[实验性] 在编译目标平台仅为 aarch64 时，被这个宏修饰的代码会被阻止编译。 
+- [is_arm_feature_detected]()	[实验性] 在编译目标平台仅为 ARM 时，被这个宏修饰的代码会被阻止编译。
+- [is_mips64_feature_detected]()	[实验性] 在编译目标平台仅为 MIPS64 时，被这个宏修饰的代码会被阻止编译。.
+- [is_mips_feature_detected]()	[实验性] 在编译目标平台仅为 MIPS 时，被这个宏修饰的代码会被阻止编译。
+- [is_powerpc64_feature_detected]()	[实验性] 在编译目标平台仅为 PowerPC64 时，被这个宏修饰的代码会被阻止编译。
+- [is_powerpc_feature_detected]()	[实验性] 在编译目标平台仅为 PowerPC 时，被这个宏修饰的代码会被阻止编译
+- [select]()	[废弃的] [实验性] 该宏用于在一系列事件接受者中选取一个处理当前时间。
 
 ### 关键字
 
-- [as]()	The keyword for casting a value to a type.
-- [const]()	The keyword for defining constants.
-- [crate]()	The crate keyword.
-- [enum]()	For defining enumerations.
-- [extern]()	For external connections in Rust code.
-- [fn]()	The keyword for defining functions.
-- [for]()	The for keyword.
-- [if]()	If statements and expressions.
-- [impl]()	The implementation-defining keyword.
-- [let]()	The variable binding keyword.
-- [loop]()	The loop-defining keyword.
-- [struct]()	The keyword used to define structs.
+- [as]()	用于将一个值转换为类型的关键字。
+- [const]()	用于定义常量。
+- [crate]()	用于代码库的关键字。
+- [enum]()	用于定义枚举。
+- [extern]()	用于外部模块导入。
+- [fn]()	用于定义函数。
+- [for]()	for关键字。
+- [if]()	if语句定义关键字。
+- [impl]()	定义特性实现的关键字。
+- [let]()	实现变量绑定的关键字。
+- [loop]()	用于定义循环的关键字。
+- [struct]()	用于定义结构体的关键字。
